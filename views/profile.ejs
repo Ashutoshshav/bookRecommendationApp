@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>Welcome, <%= user.username %>!</h1>
+
+    <h2>Your Preferences:</h2>
+    <p>Genres: <%= user.genres %></p>
+    <p>Authors: <%= user.authors %></p>
+
+    <form action="/recommend" method="POST">
+        <input type="hidden" name="userId" value="<%= user._id %>">
+        <button type="submit">Get Recommendations</button>
+    </form>
+
+    <div id="recommendations">
+        
+    </div>
+</body>
+</html>
