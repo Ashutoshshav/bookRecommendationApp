@@ -8,7 +8,7 @@ This web application provides personalized book recommendations using OpenAI's l
 
 - Backend: Node.js with Express.js
 - Database: MongoDB
-- Frontend: HTML with EJS
+- Frontend: HTML, Bootstrap with EJS
 - AI Integration: OpenAI's GPT-3
 
 ## How to Run
