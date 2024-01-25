@@ -81,7 +81,7 @@ app.post('/recommend', async (req, res) => {
         const prompt = `Recommend books based on genres: ${genres} and authors: ${authors}`;
 
         const openai = new OpenAI({
-          apiKey: api_key,
+          apiKey: "api_key",
         });
 
         const response = await openai.chat.completions.create({
